@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+    <meta name="author" content="{{ site.author.name }}">
+
+    <meta property="og:title" content="Francisco's Drywall Service" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="http://www.franciscosdrywall.com/assets/img/franciscoMendoza.jpg"/>
+    <meta property="og:description" content="Francisco's Drywall service provides Drywall services in the Monterey bay area."/>
+    <meta property="fb:admins" content="francisco.mendoza" />
+
+    <link href='//netdna.bootstrapcdn.com/twitter-bootstrap/2.1.1/css/bootstrap-combined.min.css' rel='stylesheet'>    
+    <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+    <link href="http://fonts.googleapis.com/css?family=Pontano+Sans" rel="stylesheet" type="text/css">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js"></script>
+
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body>
+
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+<!--          <a class="brand" href="http://www.franciscosdrywall.com"><img width="261" height="64"src="/assets/img/franciscosdrywall.png"></img></a> -->
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/categories.html">Categories</a></li>
+              <li><a href="/pages.html">Pages</a></li>
+              <li><a href="/tags.html">Tags</a></li>
+            </ul>
+            <p class="pull-right">
+              <a class="nav-a-social" href="mailto:gorditomendoza@yahoo.com"><i class="icon-mail-color icon-social"></i></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>    
+
+    <div class="container-fluid container-main">
+      {{ content }}
+      <hr>
+      <footer>
+         <p>&copy;{{ site.author.name }} 2014</p>
+       </footer>
+    </div>    
+    <!--
+
+    <script src="/assets/js/jquery.js"></script>
+    <script src="/assets/js/bootstrap-transition.js"></script>
+    <script src="/assets/js/bootstrap-alert.js"></script>
+    <script src="/assets/js/bootstrap-modal.js"></script>
+    <script src="/assets/js/bootstrap-dropdown.js"></script>
+    <script src="/assets/js/bootstrap-scrollspy.js"></script>
+    <script src="/assets/js/bootstrap-tab.js"></script>
+    <script src="/assets/js/bootstrap-tooltip.js"></script>
+    <script src="/assets/js/bootstrap-popover.js"></script>
+    <script src="/assets/js/bootstrap-button.js"></script>
+    <script src="/assets/js/bootstrap-collapse.js"></script>
+    <script src="/assets/js/bootstrap-carousel.js"></script>
+    <script src="/assets/js/bootstrap-typeahead.js"></script>
+
+    -->
+
+    {% include JB/analytics %}
+  </body>
+</html>
